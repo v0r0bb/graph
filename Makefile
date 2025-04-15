@@ -1,7 +1,7 @@
 PROGRAM_NAME=graph
-OBJECT_FILES = *.o 
+OBJECT_FILES=*.o 
 SOURCE_FILES=graph.c main.c
-CLEAN = rm -f 
+CLEAN=rm -f 
 
 $(PROGRAM_NAME): $(OBJECT_FILES)
 	gcc -o $@ $^

@@ -25,7 +25,8 @@ int main(void) {
     AddEdge(&g, 5, 4);
 
     DisplayAdgList(&g);
-    dfs(&g, 5);
+    dfs(&g, 0);
+    bfs(&g, 1);
     EmptyGraph(&g);
     return 0;
 }
