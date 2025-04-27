@@ -1,5 +1,7 @@
-#include <stdbool.h>
+#ifndef GRAPH_H
+#define GRAPH_H
 
+#include <stdbool.h>
 typedef struct node {
     int v;
     struct node *next;
@@ -16,3 +18,5 @@ void DisplayAdgList(const Graph *pg);
 void dfs(const Graph *pg, int v);
 void bfs(const Graph *pg, int v);
 void EmptyGraph(Graph *pg);
+
+#endif

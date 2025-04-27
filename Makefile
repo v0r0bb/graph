@@ -2,12 +2,12 @@ PROGRAM_NAME=graph
 OBJECT_FILES=*.o 
 SOURCE_FILES=graph.c main.c
 CLEAN=rm -f 
-
+CC=gcc
 $(PROGRAM_NAME): $(OBJECT_FILES)
-	gcc -o $@ $^
+	$(CC) -o $@ $^
 
 $(OBJECT_FILES): $(SOURCE_FILES)
-	gcc -c $^
+	$(CC) -c $^
 
 clean:
 	$(CLEAN) *.o $(PROGRAM_NAME)
