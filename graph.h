@@ -1,5 +1,5 @@
-#ifndef GRAPH_H
-#define GRAPH_H
+#ifndef _GRAPH_H_
+#define _GRAPH_H_
 
 #include <stdbool.h>
 typedef struct node {
